@@ -12,7 +12,7 @@ export class TonConnectStorage implements IStorage {
     constructor(private readonly chatId: number) {}
 
     private getKey(key: string): string {
-        return this.chatId.toString() + key;
+        return `tg_bot:${this.chatId}:${key}`;
     }
 
     async removeItem(key: string): Promise<void> {
