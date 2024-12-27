@@ -2,7 +2,7 @@
   "name": "ton-connect-demo-bot",
   "version": "1.0.0",
   "scripts": {
-    "compile": "npx rimraf dist && tsc",
+    "build": "npx rimraf dist && tsc",
     "start": "node ./dist/main.js",
     "start:redis": "docker run -d -p 127.0.0.1:6379:6379 redis/redis-stack-server:latest",
     "start:daemon": "pm2 start --name tgbot ./dist/main.js",
