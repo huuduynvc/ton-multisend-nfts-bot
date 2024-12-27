@@ -66,8 +66,8 @@ async function handleCollectionInput(msg: TelegramBot.Message): Promise<void> {
             'Please enter the list in the following format (one transaction per line):\n' +
             '<recipient address> <NFT ID> <payload (optional, no space)>\n\n' +
             'Example:\n' +
-            'EQA0i8-CdGnF_DhUHHf92R1ONH6sIA9vLZ_WLcCIhfBBXwtG 1 Black_meet_WuLong\n' +
-            'EQA0i8-CdGnF_DhUHHf92R1ONH6sIA9vLZ_WLcCIhfBBXwtG 2 Black_meet_WuKong'
+            'EQA0i8-CdGnF_DhUHHf92R1ONH6sIA9vLZ_WLcCIhfBBXwtG 1 ton_hello_world\n' +
+            'EQA0i8-CdGnF_DhUHHf92R1ONH6sIA9vLZ_WLcCIhfBBXwtG 2 ton_hello_world'
         );
 
         bot.once('message', async (msg) => {
@@ -334,8 +334,8 @@ async function handleAutoSendCollectionInput(msg: TelegramBot.Message): Promise<
             'Please enter the list in the following format (one transaction per line):\n' +
             '<recipient address> <payload (optional, no space)>\n\n' +
             'Example:\n' +
-            'EQA0i8-CdGnF_DhUHHf92R1ONH6sIA9vLZ_WLcCIhfBBXwtG Black_meet_WuLong\n' +
-            'EQA0i8-CdGnF_DhUHHf92R1ONH6sIA9vLZ_WLcCIhfBBXwtG Black_meet_WuKong'
+            'EQA0i8-CdGnF_DhUHHf92R1ONH6sIA9vLZ_WLcCIhfBBXwtG ton_hello_world\n' +
+            'EQA0i8-CdGnF_DhUHHf92R1ONH6sIA9vLZ_WLcCIhfBBXwtG ton_hello_world'
         );
 
         bot.once('message', async (msg) => {
